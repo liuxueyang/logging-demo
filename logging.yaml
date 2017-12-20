@@ -26,13 +26,14 @@ loggers:
     handlers: [debug_console]
     propagate: no
 
-  # src:
-  #   level: DEBUG
-  #   handlers: [src_file_handler]
-
   main_lib:
     level: DEBUG
     handlers: [main_lib_file_handler]
+
+  src.hello:
+    level: DEBUG
+    handlers: [debug_console]
+    propagate: no
 
 root:
   level: DEBUG
